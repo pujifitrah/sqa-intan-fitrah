@@ -11,7 +11,7 @@ export const config: Options.Testrunner = {
     },
     
     specs: [
-        '../tests/web/specs/signup.ts'
+        '../tests/web/specs/*.ts'
     ],
     exclude: [],
     maxInstances: 10,
