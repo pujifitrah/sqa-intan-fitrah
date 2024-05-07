@@ -8,27 +8,28 @@ export const config: Options.Testrunner = {
       project: "./tsconfig.json",
       transpileOnly: true,
     },
-  },
-
-  specs: ["../tests/web/specs/signup.ts"],
-  exclude: [],
-  maxInstances: 10,
-  capabilities: [
-    {
-      browserName: "chrome",
+    
+    specs: [
+        '../tests/web/specs/signup.ts'
+    ],
+    exclude: [],
+    maxInstances: 10,
+    capabilities: [
+        {
+            browserName: "chrome",
+          },
+    ],
+    logLevel: 'info',
+    bail: 0,
+    waitforTimeout: 10000,
+    connectionRetryTimeout: 120000,
+    connectionRetryCount: 3,
+    framework: 'mocha',
+    reporters: ['spec'],
+    mochaOpts: {
+        ui: 'bdd',
+        timeout: 60000
     },
-  ],
-  logLevel: "info",
-  bail: 0,
-  waitforTimeout: 10000,
-  connectionRetryTimeout: 120000,
-  connectionRetryCount: 3,
-  framework: "mocha",
-  reporters: ["spec"],
-  mochaOpts: {
-    ui: "bdd",
-    timeout: 60000,
-  },
-};
+}
 
 export default 0;
