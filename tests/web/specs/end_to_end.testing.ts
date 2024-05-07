@@ -15,7 +15,7 @@ describe("My End to end Application", () => {
     await loginSignupUsecase.createAccount({ password: password });
   });
 
-  it("should log in with invalid credentials", async () => {
+  it("log in with invalid credentials", async () => {
     await loginSignupController.clickLogout();
     await browser.pause(3000);
     await loginSignupController.setLoginEmail("lalala@y.com");
