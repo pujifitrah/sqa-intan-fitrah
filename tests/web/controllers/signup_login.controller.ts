@@ -46,4 +46,6 @@ export class SignupLoginController {
   async logoutExist() {
     await SignupLoginPage.logoutButton.isDisplayed();
   }
+
+  async cobaElement() {}
 }
