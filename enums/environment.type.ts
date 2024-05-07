@@ -1,4 +1,4 @@
 export enum Environment {
-    dev = "dev",
-    staging = "staging"
+  dev = "dev",
+  staging = "staging",
 }

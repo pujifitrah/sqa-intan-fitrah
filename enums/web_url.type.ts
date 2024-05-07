@@ -1,3 +1,3 @@
 export enum WebUrl {
-    url = "https://automationexercise.com"
+  url = "https://automationexercise.com",
 }
