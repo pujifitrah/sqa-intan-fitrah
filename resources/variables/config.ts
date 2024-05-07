@@ -1,3 +1,1 @@
-export type Config = {
-    
-}
+export type Config = {};

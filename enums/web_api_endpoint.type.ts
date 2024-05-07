@@ -1,3 +1,3 @@
 export enum WebApiEndpoints {
-    webApi = "https://automationexercise.com",
-  }
+  webApi = "https://automationexercise.com",
+}
