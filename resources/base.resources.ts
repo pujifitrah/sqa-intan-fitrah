@@ -1,11 +1,11 @@
-import { join } from 'path';
+import { join } from "path";
 
 export class BaseResource {
-    getPath() {
-        return "";
-    }
+  getPath() {
+    return "";
+  }
 
-    getFile(fileName: string) {
-        return join(__dirname, this.getPath() + "/" + fileName);
-    }
+  getFile(fileName: string) {
+    return join(__dirname, this.getPath() + "/" + fileName);
+  }
 }

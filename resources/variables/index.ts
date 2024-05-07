@@ -5,14 +5,14 @@ import { devData } from "./dev.data";
 import { stagingData } from "./staging.data";
 
 export function AGTestData(): Config {
-    const env = Parser("env")
+  const env = Parser("env");
 
-    switch (env) {
-        case Environment.staging:
-          return stagingData
-        case Environment.dev:
-          return devData
-        default:
-          return stagingData;
-      }
+  switch (env) {
+    case Environment.staging:
+      return stagingData;
+    case Environment.dev:
+      return devData;
+    default:
+      return stagingData;
+  }
 }
